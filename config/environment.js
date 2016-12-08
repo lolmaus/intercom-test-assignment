@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'intercom-test-assignment',
+    podModulePrefix: 'intercom-test-assignment/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
