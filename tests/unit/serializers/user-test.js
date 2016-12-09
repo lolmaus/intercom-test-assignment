@@ -10,11 +10,11 @@ User.modelName = 'user'
 
 
 describeModule(
-  'serializer:-intercom',
-  'Unit | Serializer | -intercom',
+  'serializer:user',
+  'Unit | Serializer | user',
   {
     // Specify the other units that are required for this test.
-    // needs: ['serializer:-intercom']
+    // needs: ['serializer:user']
   },
   function () {
 

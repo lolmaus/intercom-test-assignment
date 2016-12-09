@@ -5,6 +5,8 @@ import Component from 'ember-component'
 export default Component.extend({
 
   // ----- Arguments -----
+  cities:      undefined,
+  currentCity: undefined,
 
 
 
@@ -13,7 +15,7 @@ export default Component.extend({
 
 
   // ----- Overridden properties -----
-  classNames: ['userListItem'],
+  classNames: ['citiesChooser'],
 
 
 

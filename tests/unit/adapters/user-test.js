@@ -11,8 +11,8 @@ let m
 
 
 describeModule(
-  'adapter:-gist',
-  'Unit | Adapter | -gist',
+  'adapter:user',
+  'Unit | Adapter | user',
   {
     // Specify the other units that are required for this test.
     // needs: ['serializer:foo']

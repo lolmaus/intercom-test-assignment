@@ -3,24 +3,28 @@ import {describeModule, it} from 'ember-mocha'
 import { startMirage } from 'intercom-test-assignment/initializers/ember-cli-mirage'
 import RSVP from 'rsvp'
 import User from 'intercom-test-assignment/models/user'
-import usersFixture from 'intercom-test-assignment/mirage/fixtures/users'
+import City from 'intercom-test-assignment/models/city'
+import {usersFixtureCount} from 'intercom-test-assignment/mirage/fixtures/users'
+import citiesFixture from 'intercom-test-assignment/mirage/fixtures/cities'
 
 
 
 let m
 
-const usersFixtureCount =
-  usersFixture
-    .split('\n')
-    .filter(str => str.trim().length) // Remove blank lines
-    .length
 
 
 
 describeModule('route:index', 'Unit | Route | index',
   {
     // Specify the other units that are required for this test.
-    needs: ['model:user', 'adapter:application', 'serializer:user'],
+    needs: [
+      'model:user',
+      'adapter:user',
+      'serializer:user',
+      'model:city',
+      'adapter:application',
+      'serializer:application',
+    ],
 
     beforeEach () {
       this.server = startMirage()
@@ -63,7 +67,17 @@ describeModule('route:index', 'Unit | Route | index',
 
       m = "Each user should be an instance of the User model"
       users.forEach(user => {
-        expect(user instanceof User, m).ok
+        expect(user instanceof User, m).true
+      })
+
+      const cities = result.cities.toArray()
+
+      m = "Hash should contain cities"
+      expect(cities, m).length(citiesFixture.data.length)
+
+      m = "Each city should be an instance of the City model"
+      cities.forEach(city => {
+        expect(city instanceof City, m).true
       })
     })
   }

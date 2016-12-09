@@ -1,5 +1,5 @@
 import {/*collection, */create} from 'ember-cli-page-object'
-import c from 'intercom-test-assignment/tests/helpers/component'
+import c from 'intercom-test-assignment/tests/helpers/page-object/component'
 
 
 

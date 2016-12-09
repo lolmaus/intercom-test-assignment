@@ -1,0 +1,17 @@
+<select
+  class    = "citiesChooser-select"
+>
+  {{#each cities as |city|}}
+    <option
+      value    = {{city.id}}
+      selected = {{eq city currentCity}}
+    >
+      {{city.name}}
+    </option>
+  {{/each}}
+</select>
+
+
+{{!--
+  onchange = {{action foo value="target.value"}}
+--}}

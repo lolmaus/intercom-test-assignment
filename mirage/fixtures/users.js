@@ -1,4 +1,5 @@
-export default `{"latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701"}
+const usersStr =
+`{"latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701"}
 {"latitude": "51.92893", "user_id": 1, "name": "Alice Cahill", "longitude": "-10.27699"}
 {"latitude": "51.8856167", "user_id": 2, "name": "Ian McArdle", "longitude": "-10.4240951"}
 {"latitude": "52.3191841", "user_id": 3, "name": "Jack Enright", "longitude": "-8.5072391"}
@@ -30,3 +31,11 @@ export default `{"latitude": "52.986375", "user_id": 12, "name": "Christina McAr
 {"latitude": "53.761389", "user_id": 30, "name": "Nick Enright", "longitude": "-7.2875"}
 {"latitude": "54.080556", "user_id": 23, "name": "Eoin Gallagher", "longitude": "-6.361944"}
 {"latitude": "52.833502", "user_id": 25, "name": "David Behan", "longitude": "-8.522366"}`
+
+export default usersStr
+
+export const usersFixtureCount =
+  usersStr
+    .split('\n')
+    .filter(str => str.trim().length) // Remove blank lines
+    .length
