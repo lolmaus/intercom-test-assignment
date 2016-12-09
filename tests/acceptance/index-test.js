@@ -24,6 +24,6 @@ describe('Acceptance | user list', function () {
 
   it('should contain the user list', async function () {
     await IndexPage.visit()
-    expect(IndexPage.userList).ok
+    expect(IndexPage.userList.isVisible).true
   })
 })
