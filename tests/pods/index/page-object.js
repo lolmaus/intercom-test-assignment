@@ -3,7 +3,7 @@ import {
   visitable
 } from 'ember-cli-page-object'
 
-import userList from './components/user-list'
+import userList from '../components/user-list/page-object'
 
 
 

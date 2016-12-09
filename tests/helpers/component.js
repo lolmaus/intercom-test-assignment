@@ -37,7 +37,7 @@ export default function component (scope = '', descriptor = {}) {
   }
 
   return {
-    ...(scope ? {scope} : {}), // inject the scope only if it was provided
+    ...(scope ? {scope, itemScope: scope} : {}), // inject the scope only if it was provided
 
     blur:         jquery($el => $el.blur()),
     checked:      jquery($el => $el.is(':checked')),

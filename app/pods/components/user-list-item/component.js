@@ -5,7 +5,6 @@ import Component from 'ember-component'
 export default Component.extend({
 
   // ----- Arguments -----
-  users: undefined,
 
 
 
@@ -14,8 +13,8 @@ export default Component.extend({
 
 
   // ----- Overridden properties -----
-  classNames: ['userList'],
-
+  classNames: ['userListItem'],
+  
 
 
   // ----- Static properties -----

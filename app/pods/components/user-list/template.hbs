@@ -1,1 +1,8 @@
-{{yield}}
+<div class = "userList-items">
+  {{#each users as |user|}}
+    {{user-list-item
+      class = "userList-item"
+      user  = user
+    }}
+  {{/each}}
+</div>
