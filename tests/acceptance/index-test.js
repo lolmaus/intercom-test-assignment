@@ -21,4 +21,9 @@ describe('Acceptance | user list', function () {
     await IndexPage.visit()
     expect(currentURL()).equal('/')
   })
+
+  it('should contain the user list', async function () {
+    await IndexPage.visit()
+    expect(IndexPage.userList).ok
+  })
 })
