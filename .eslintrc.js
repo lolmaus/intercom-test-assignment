@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
+  parser: "babel-eslint",
   parserOptions: {
-    ecmaVersion: 6,
+    // ecmaVersion: 8,
     sourceType: 'module'
   },
   env: {
@@ -11,7 +12,8 @@ module.exports = {
     "eslint:recommended",
     "standard"
   ],
-  "rules": {
+  rules: {
+    strict: "off",
     "comma-dangle": "off",
     "spaced-comment": "off",
     "no-multiple-empty-lines": "off",
@@ -21,8 +23,8 @@ module.exports = {
     "no-multi-spaces": "off",
     "func-call-spacing": "off",
     "no-console": "off",
-    "quotes": "off",
-    "camelcase": "off",
+    quotes: "off",
+    camelcase: "off",
     "padded-blocks": "off",
     "standard/object-curly-even-spacing": "off",
     "operator-linebreak": "off",
@@ -33,10 +35,10 @@ module.exports = {
     "no-whitespace-before-property": "off",
   },
 
-  "globals": {
-    // "showdown": false,
-    // "d3": false,
-    // "dc": false,
-    // "crossfilter": false
+  globals: {
+    // showdown: false,
+    // d3: false,
+    // dc: false,
+    // crossfilter: false
   }
 }
