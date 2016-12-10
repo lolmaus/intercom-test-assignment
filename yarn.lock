@@ -2231,6 +2231,13 @@ ember-cli@2.10.0:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
+ember-composable-helpers@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/ember-composable-helpers/-/ember-composable-helpers-1.1.2.tgz#fc9f540269b1f01dec89be9bdc61d31c8cf41350"
+  dependencies:
+    broccoli-funnel "^1.0.1"
+    ember-cli-babel "^5.1.6"
+
 ember-computed-decorators@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-computed-decorators/-/ember-computed-decorators-0.2.2.tgz#7c934a575c55ac3a18b6aaeb7cd2cbe149bc9b34"

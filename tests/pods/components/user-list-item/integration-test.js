@@ -24,10 +24,11 @@ describe('Integration | Component | user list item', function () {
 
   it("should display fields", function () {
     this.set('user', {
-      id:        '1',
-      name:      'Foo',
-      latitude:  3,
-      longitude: -2,
+      id:         '1',
+      name:       'Foo',
+      latitude:   3,
+      longitude:  -2,
+      distanceKm: 300.12345,
     })
 
     userListItem.render(hbs`{{user-list-item user=user}}`)
@@ -40,5 +41,8 @@ describe('Integration | Component | user list item', function () {
 
     m = "Longitude"
     expect(userListItem.longitude.text, m).equal('-2')
+
+    m = "Distance"
+    expect(userListItem.distance.text, m).equal('300.12 km')
   })
 })

@@ -1,5 +1,5 @@
 <div class = "userList-items">
-  {{#each users as |user|}}
+  {{#each (sort-by 'distanceKm' users) as |user|}}
     {{user-list-item
       class = "userList-item"
       user  = user

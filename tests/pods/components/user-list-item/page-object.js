@@ -7,6 +7,7 @@ const obj = c('.userListItem', {
   name:      c('.userListItem-name'),
   latitude:  c('.userListItem-latitude'),
   longitude: c('.userListItem-longitude'),
+  distance:  c('.userListItem-distance'),
 })
 
 

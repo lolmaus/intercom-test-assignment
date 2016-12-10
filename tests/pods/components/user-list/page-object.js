@@ -6,8 +6,9 @@ import item from '../user-list-item/page-object'
 
 const obj = c('.userList', {
   users: collection({
-    ...item,
-    scope: '.userList-items'
+    scope:     '.userList-items',
+    itemScope: '.userList-item',
+    item
   })
 })
 

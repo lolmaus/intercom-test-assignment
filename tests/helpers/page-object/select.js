@@ -6,8 +6,8 @@ import {collection} from 'ember-cli-page-object'
 export default function (scope = '', descriptor = {}) {
   return component(scope, {
     options: collection({
-      ...component('option'),
-      scope: undefined
+      itemScope: 'option',
+      item: component()
     }),
     ...descriptor
   })
