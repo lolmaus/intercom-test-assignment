@@ -10,6 +10,9 @@ export default Route.extend({
 
 
   // ----- Overridden properties -----
+  queryParams: {
+    cityId: {refreshModel: true},
+  },
 
 
 
@@ -23,20 +26,51 @@ export default Route.extend({
 
   // ----- Overridden Methods -----
   model ({
+    cityId,
     usersURL  = 'https://cdn.rawgit.com/brianw/19896c50afa89ad4dec3/raw/6c11047887a03483c50017c1d451667fd62a53ca/gistfile1.txt',
     citiesURL = 'https://cdn.rawgit.com/lolmaus/d78a75f903b176a488a0e6533e65ca8b/raw/de5b26e390878c71d007589637934a9d0b683b58/cities.json'
   } = {}) {
     const store = this.get('store')
 
-    return RSVP.hash({
-      users:  store.query('user', {url: usersURL}),
-      cities: store.query('city', {url: citiesURL}),
-    })
+    return RSVP
+      .hash({
+        users:  store.query('user', {url: usersURL}),
+        cities: store.query('city', {url: citiesURL}),
+      })
+
+      .then(model => RSVP.hash({
+        ...model,
+        currentCity: model.cities.findBy('id', cityId),
+      }))
+
+      .then(model => RSVP.hash({
+        ...model,
+        userCityJunctions: this._populateJunctions({
+          currentCity: model.currentCity,
+          users:       model.users
+        })
+      }))
   },
 
 
 
   // ----- Custom Methods -----
+  _populateJunctions ({currentCity, users}) {
+    const store  = this.get('store')
+
+    const payload = {
+      data: users.map(user => ({
+        id: `${user.id}-${currentCity.id}`,
+        type: 'user-city-junction',
+        relationships: {
+          user: {data: {id: user.id,        type: 'user'}},
+          city: {data: {id: currentCity.id, type: 'city'}},
+        }
+      }))
+    }
+
+    return store.push(payload)
+  },
 
 
 

@@ -5,6 +5,9 @@ import config from './config/environment'
 
 let App
 
+// Browserify needs this
+import 'npm:lodash'
+
 Ember.MODEL_FACTORY_INJECTIONS = true
 
 App = Ember.Application.extend({
