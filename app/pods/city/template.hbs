@@ -6,13 +6,13 @@
 
 
 
-{{#with (sort-by 'distanceKm' model.userCityJunctions) as |userCityJunctions|}}
+{{#with (sort-by 'user.numericId' model.userCityJunctions) as |userCityJunctions|}}
   <label class = "route-city-distance">
     {{input
       class = "route-city-distance-slider"
       type  = "range"
       min   = 0
-      max   = userCityJunctions.lastObject.distanceKm
+      max   = (get (sort-by 'distanceKm' model.userCityJunctions) 'lastObject.distanceKm')
       value = distanceLimitKm
     }}
 

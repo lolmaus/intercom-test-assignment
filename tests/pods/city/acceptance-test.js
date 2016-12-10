@@ -38,8 +38,6 @@ describe('Acceptance | user list', function () {
     m = `the user list should contain ${usersFixtureCount} items`
     expect(IndexPage.userList.users().count, m).equal(usersFixtureCount)
 
-    let distances = []
-
     _.times(usersFixtureCount, i => {
       const user = IndexPage.userList.users(i)
 
@@ -55,10 +53,7 @@ describe('Acceptance | user list', function () {
       m = `user ${i} should have distance`
       expect(user.distance.text, m).match(/\d+\.?\d?\d? km/)
 
-      const distance = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
-
-      distances.push(distance)
-
+      const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
       const expectedClass = distance <= 100 ? '-inRange' : '-notInRange'
       const oppositeClass = distance >  100 ? '-inRange' : '-notInRange'
 
@@ -70,8 +65,8 @@ describe('Acceptance | user list', function () {
 
       if (!i) return
 
-      m = `distance of user ${i} should be larger than or equal to the distance of user ${i - 1}`
-      expect(distance, m).gte(distances[i - 1])
+      m = `id of user ${i} should be larger than id of user ${i - 1}`
+      expect(parseInt(user.id.text, 10), m).gt(parseInt(IndexPage.userList.users(i - 1).id.text, 10))
     })
 
     m = "Should contain the distance slider"
@@ -131,5 +126,34 @@ describe('Acceptance | user list', function () {
 
     m = `City longitude should be updated after selecting the second city`
     expect(IndexPage.citiesChooser.longitude.text, m).equal(`${newCity.attributes.longitude}`)
+
+    _.times(usersFixtureCount, i => {
+      const user          = IndexPage.userList.users(i)
+      const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
+      const expectedClass = distance <= 100 ? '-inRange' : '-notInRange'
+      const oppositeClass = distance >  100 ? '-inRange' : '-notInRange'
+
+      m = `user ${i} should have class ${expectedClass} after switching city`
+      expect(user.hasClass(expectedClass), m).true
+
+      m = `user ${i} should not have class ${oppositeClass} after switching city`
+      expect(user.hasClass(oppositeClass), m).false
+    })
+
+    await IndexPage.distance.slider.fill(200)
+
+    _.times(usersFixtureCount, i => {
+      const user          = IndexPage.userList.users(i)
+      const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
+      const expectedClass = distance <= 200 ? '-inRange' : '-notInRange'
+      const oppositeClass = distance >  200 ? '-inRange' : '-notInRange'
+
+      m = `user ${i} should have class ${expectedClass} after switching distance`
+      expect(user.hasClass(expectedClass), m).true
+
+      m = `user ${i} should not have class ${oppositeClass} after switching distance`
+      expect(user.hasClass(oppositeClass), m).false
+    })
+
   })
 })

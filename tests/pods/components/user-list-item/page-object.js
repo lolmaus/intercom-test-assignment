@@ -4,6 +4,7 @@ import c from 'intercom-test-assignment/tests/helpers/page-object/component'
 
 
 const obj = c('.userListItem', {
+  id:        c('.userListItem-id'),
   name:      c('.userListItem-name'),
   latitude:  c('.userListItem-latitude'),
   longitude: c('.userListItem-longitude'),
