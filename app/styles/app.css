@@ -1,0 +1,7 @@
+.leaflet-container {
+  height: 300px;
+}
+
+.-notInRange {
+  opacity: 0.3
+}

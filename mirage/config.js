@@ -27,7 +27,7 @@ export default function () {
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
   const usersURL  = 'https://cdn.rawgit.com/brianw/19896c50afa89ad4dec3/raw/6c11047887a03483c50017c1d451667fd62a53ca/gistfile1.txt'
-  const citiesURL = 'https://cdn.rawgit.com/lolmaus/d78a75f903b176a488a0e6533e65ca8b/raw/de5b26e390878c71d007589637934a9d0b683b58/cities.json'
+  const citiesURL = 'https://cdn.rawgit.com/lolmaus/d78a75f903b176a488a0e6533e65ca8b/raw/a7919fa7c9b3359a975bdd56a917d26060f7c7fe/cities.json'
 
   this.get(usersURL,  () => users)
   this.get(citiesURL, () => cities)
