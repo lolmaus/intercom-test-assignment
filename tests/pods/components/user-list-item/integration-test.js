@@ -45,4 +45,27 @@ describe('Integration | Component | user list item', function () {
     m = "Distance"
     expect(userListItem.distance.text, m).equal('300.12 km')
   })
+
+  it("should have distance limit class", function () {
+    this.setProperties({
+      user:            {distanceKm: 300},
+      distanceLimitKm: 500
+    })
+
+    userListItem.render(hbs`{{user-list-item user=user distanceLimitKm=distanceLimitKm}}`)
+
+    m = "should initially have class -inRange"
+    expect(userListItem.hasClass('-inRange'), m).true
+
+    m = "should not initially have class -notInRange"
+    expect(userListItem.hasClass('-notInRange'), m).false
+
+    this.set('distanceLimitKm', 100)
+
+    m = "should have class -inRange after limit update"
+    expect(userListItem.hasClass('-inRange'), m).false
+
+    m = "should not have class -notInRange after limit update"
+    expect(userListItem.hasClass('-notInRange'), m).true
+  })
 })

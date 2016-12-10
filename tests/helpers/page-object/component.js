@@ -47,10 +47,8 @@ export default function component (scope = '', descriptor = {}) {
     fill:         fillable(),
     focus:        jquery($el => $el.focus()),
     index:        jquery($el => $el.index()),
-    isActive:     jquery($el => $el.is('.is-active')),
-    isExpanded:   jquery($el => $el.is('.is-expanded')),
-    isError:      jquery($el => $el.is('.is-error')),
-    isVisibile:   isVisible(),
+    hasClass:     jquery($el => className => $el.hasClass(className)),
+    isVisible:   isVisible(),
     text:         text(),
     value:        value(),
 

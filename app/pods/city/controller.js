@@ -13,6 +13,7 @@ export default Controller.extend({
 
 
   // ----- Static properties -----
+  distanceLimitKm: 100,
 
 
 

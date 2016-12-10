@@ -38,7 +38,7 @@ describe('Acceptance | user list', function () {
     m = `the user list should contain ${usersFixtureCount} items`
     expect(IndexPage.userList.users().count, m).equal(usersFixtureCount)
 
-    let previousDistance
+    let distances = []
 
     _.times(usersFixtureCount, i => {
       const user = IndexPage.userList.users(i)
@@ -57,13 +57,34 @@ describe('Acceptance | user list', function () {
 
       const distance = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
 
-      if (i) {
-        m = `distance of user ${i} should be larger than or equal to the distance of user ${i - 1}`
-        expect(distance, m).gte(previousDistance)
-      }
+      distances.push(distance)
 
-      previousDistance = distance
+      const expectedClass = distance <= 100 ? '-inRange' : '-notInRange'
+      const oppositeClass = distance >  100 ? '-inRange' : '-notInRange'
+
+      m = `user ${i} should have class ${expectedClass}`
+      expect(user.hasClass(expectedClass), m).true
+
+      m = `user ${i} should not have class ${oppositeClass}`
+      expect(user.hasClass(oppositeClass), m).false
+
+      if (!i) return
+
+      m = `distance of user ${i} should be larger than or equal to the distance of user ${i - 1}`
+      expect(distance, m).gte(distances[i - 1])
     })
+
+    m = "Should contain the distance slider"
+    expect(IndexPage.distance.slider.isVisible, m).true
+
+    m = "The distance label should initially be 100km"
+    expect(IndexPage.distance.label.text, m).equal('100 km')
+
+    // distances.forEach((distance, i) => {
+    //   const user = IndexPage.userList.users(i)
+    // })
+
+
 
     m = "should contain the cities chooser"
     expect(IndexPage.citiesChooser.isVisible, m).true

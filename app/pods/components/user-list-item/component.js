@@ -1,10 +1,13 @@
 import Component from 'ember-component'
+import lte from 'ember-awesome-macros/lte'
 
 
 
 export default Component.extend({
 
   // ----- Arguments -----
+  user:            undefined,
+  distanceLimitKm: undefined,
 
 
 
@@ -13,11 +16,12 @@ export default Component.extend({
 
 
   // ----- Overridden properties -----
-  classNames: ['userListItem'],
+  classNameBindings: [':userListItem', 'isInRange:-inRange:-notInRange'],
 
 
 
   // ----- Static properties -----
+  isInRange: lte('user.distanceKm', 'distanceLimitKm'),
 
 
 

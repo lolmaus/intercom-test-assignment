@@ -392,6 +392,10 @@ babel-plugin-eval@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-eval/-/babel-plugin-eval-1.0.1.tgz#a2faed25ce6be69ade4bfec263f70169195950da"
 
+babel-plugin-fake-import-specifiers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-fake-import-specifiers/-/babel-plugin-fake-import-specifiers-1.0.0.tgz#abf4cef63f8a3e3048e52c4a322ac19ac6c796f9"
+
 babel-plugin-feature-flags@^0.2.1:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-feature-flags/-/babel-plugin-feature-flags-0.2.3.tgz#81d81ed77bda2014098fa8243abcf03a551cbd4d"
@@ -1818,6 +1822,14 @@ ember-ajax@^2.4.1:
   dependencies:
     ember-cli-babel "^5.1.5"
 
+ember-awesome-macros@^0.26.2:
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/ember-awesome-macros/-/ember-awesome-macros-0.26.2.tgz#42c04fa6643a474c4530a0626f2963b2e5f5b3eb"
+  dependencies:
+    babel-plugin-fake-import-specifiers "^1.0.0"
+    ember-cli-babel "^5.1.7"
+    ember-macro-helpers "0.2.0"
+
 ember-browserify@1.1.9:
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/ember-browserify/-/ember-browserify-1.1.9.tgz#58dfc8aef7cd90e139ecf673a4a6f23802a8938e"
@@ -2302,6 +2314,12 @@ ember-lodash@0.0.9:
     broccoli-merge-trees "^1.1.1"
     ember-cli-babel "^5.1.5"
     lodash-es "^3.10.0"
+
+ember-macro-helpers@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ember-macro-helpers/-/ember-macro-helpers-0.2.0.tgz#6452e78ccf36d7a153881f34422fa2a159b416db"
+  dependencies:
+    ember-cli-babel "^5.1.7"
 
 ember-mocha@^0.9.4:
   version "0.9.4"
