@@ -5,8 +5,9 @@ import Component from 'ember-component'
 export default Component.extend({
 
   // ----- Arguments -----
-  cities:      undefined,
-  currentCity: undefined,
+  cities:           undefined,
+  currentCity:      undefined,
+  changeCityAction: undefined,
 
 
 

@@ -16,7 +16,7 @@ let m
 
 
 
-describeModule('route:index', 'Unit | Route | index',
+describeModule('route:city', 'Unit | Route | city',
   {
     // Specify the other units that are required for this test.
     needs: [
@@ -54,7 +54,7 @@ describeModule('route:index', 'Unit | Route | index',
       const modelPromise = route.model({cityId: 'dublin'})
 
       m = "Should return an instance of RSVP.Promise"
-      expect(modelPromise).instanceof(RSVP.Promise)
+      expect(modelPromise, m).instanceof(RSVP.Promise)
 
       const model = await modelPromise
 
@@ -69,8 +69,8 @@ describeModule('route:index', 'Unit | Route | index',
       m = `Hash should contain ${usersFixtureCount} users`
       expect(users, m).length(usersFixtureCount)
 
-      m = "Each user should be an instance of the User model"
       users.forEach(user => {
+        m = `User with id ${user.id} should be an instance of the User model`
         expect(user instanceof User, m).true
       })
 

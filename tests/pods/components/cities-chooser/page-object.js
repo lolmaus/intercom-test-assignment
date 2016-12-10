@@ -5,7 +5,10 @@ import select from 'intercom-test-assignment/tests/helpers/page-object/select'
 
 
 const obj = c('.citiesChooser', {
-  select: select('.citiesChooser-select')
+  select:    select('.citiesChooser-select'),
+  name:      c('.citiesChooser-name'),
+  latitude:  c('.citiesChooser-latitude'),
+  longitude: c('.citiesChooser-longitude'),
 })
 
 

@@ -32,6 +32,7 @@
     "ember-cli-mirage": "^0.2.4",
     "ember-cli-mocha": "^0.13.0",
     "ember-cli-mocha-reporter": "https://github.com/lolmaus/ember-cli-mocha-reporter.git#patch-1",
+    "ember-cli-nprogress": "^0.1.2",
     "ember-cli-page-object": "^1.7.0",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sri": "^2.1.0",

@@ -4,6 +4,7 @@
     "ember": "~2.10.0",
     "ember-cli-shims": "~0.1.1",
     "ember-mocha-adapter": "~0.3.1",
-    "url.js": "jillix/url.js#^2.4.0"
+    "url.js": "jillix/url.js#^2.4.0",
+    "nprogress": "alexlafroscia/nprogress#allow-alternate-scheduler"
   }
 }

@@ -9,12 +9,10 @@ export default Controller.extend({
 
 
   // ----- Overridden properties -----
-  queryParams: ['cityId'],
 
 
 
   // ----- Static properties -----
-  cityId: 'dublin',
 
 
 
@@ -39,6 +37,9 @@ export default Controller.extend({
 
 
   // ----- Actions -----
-  // actions: {
-  // }
+  actions: {
+    changeCityAction (cityId) {
+      this.transitionToRoute('city', cityId)
+    }
+  }
 })
