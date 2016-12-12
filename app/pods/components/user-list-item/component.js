@@ -8,6 +8,7 @@ export default Component.extend({
   // ----- Arguments -----
   user:            undefined,
   distanceLimitKm: undefined,
+  labels:          false,
 
 
 
@@ -16,7 +17,11 @@ export default Component.extend({
 
 
   // ----- Overridden properties -----
-  classNameBindings: [':userListItem', 'isInRange:-inRange:-notInRange'],
+  classNameBindings: [
+    ':userListItem',
+    'isInRange:-inRange',
+    'labels:-labels'
+  ],
 
 
 

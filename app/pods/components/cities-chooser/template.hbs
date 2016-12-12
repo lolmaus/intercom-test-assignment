@@ -1,3 +1,7 @@
+<span class = "citiesChooser-label">
+  Select city:
+</span>
+
 <select
   class    = "citiesChooser-select"
   onchange = {{action changeCityAction value="target.value"}}
@@ -12,8 +16,8 @@
   {{/each}}
 </select>
 
-<div>
-  <span class = "citiesChooser-name">      {{currentCity.name}}      </span>
+<span>
+  <span class = "citiesChooser-name">      {{!currentCity.name}}     </span>
   <span class = "citiesChooser-latitude">  {{currentCity.latitude}}  </span>
   <span class = "citiesChooser-longitude"> {{currentCity.longitude}} </span>
-</div>
+</span>

@@ -7,9 +7,10 @@ import item from '../user-list-item/page-object'
 const obj = c('.userList', {
   users: collection({
     scope:     '.userList-items',
-    itemScope: '.userList-item',
+    itemScope: '.userList-item:not(._empty)',
     item
-  })
+  }),
+  emptyState: c('.userList-items .userList-item._empty')
 })
 
 

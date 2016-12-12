@@ -1,0 +1,53 @@
+@at-root
+
+  @import ../user-list-item/mixins
+
+
+
+  ////------------------------------------------
+  .userList
+    //------------------------------------------
+
+    // ----- Content layout -----
+    .userList-title
+      margin-bottom: 1rem
+
+    .userList-tableHeader
+      margin-bottom: 0.3rem
+
+    .userList-item
+      overflow:   hidden
+      transition: max-height 0.3s, opacity 0.3s
+
+      &:not(.-InRange)
+        max-height: 0
+        opacity:    0.3
+
+      &.-inRange
+        max-height: 200px
+        opacity:    1
+
+
+    // ----- RWD -----
+    +to(s)
+      .userList-tableHeader
+        display: none
+
+      .userList-item
+        &:not(:last-child)
+          margin-bottom: 1rem
+
+    +from(m)
+      .userList-item, .userList-tableHeader
+        +userListItem-oneLine
+        max-height: 30px
+
+
+
+  ////------------------------------------------
+  .userList-tableHeader
+    //------------------------------------------
+
+    // ----- Looks -----
+    font-size: 0.8em
+    color:     grey

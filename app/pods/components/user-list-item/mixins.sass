@@ -1,0 +1,23 @@
+=userListItem-oneLine
+  display: flex
+
+  .userListItem-element
+    &:not(:last-child)
+      margin-right: 1rem
+
+    &._id
+      width: 20px
+      text-align: right
+
+    &._name
+      width: 150px
+
+    &._latitude, &._longitude
+      width: 80px
+
+    &._distance
+      width:      100px
+      text-align: right
+
+  .userListItem-element-label
+    display: none

@@ -1,0 +1,87 @@
+////------------------------------------------
+.heroHeader
+  //------------------------------------------
+
+  // ----- Layout -----
+  position:   relative
+  min-height: 300px
+
+  // ----- Looks -----
+  background-color: #322D2B
+
+  &, a, h2
+    color: white
+
+  // ----- Content layout -----
+  .heroHeader-map
+    position: absolute
+    left:     0
+    top:      0
+    width:    100%
+    height:   100%
+    z-index:  1
+
+  .heroHeader-title
+    position: relative
+    z-index:  2
+
+  // ----- RWD -----
+  $padding: 2rem
+
+  +to(s)
+    padding:         $padding
+    display:         flex
+    flex-direction:  column
+    justify-content: space-between
+    text-align:      center
+
+    .heroHeader-title-lineBreak
+      display: none
+
+    .heroHeader-title:first-child
+      margin-bottom: $padding
+
+  +from(m)
+    .heroHeader-title
+      position:  absolute
+      top:       50%
+      transform: translate(0, -50%)
+
+      &._left
+        left: $padding
+
+      &._right
+        right: $padding
+        text-align: right
+
+
+
+////------------------------------------------
+.heroHeader-title
+  //------------------------------------------
+
+  // ----- Looks -----
+  font-size: 40px
+  text-shadow: 0 0 6px black
+
+
+
+
+////------------------------------------------
+.heroHeader-map
+  //------------------------------------------
+
+  // ----- Content Looks -----
+  .leaflet-tile-pane
+    filter: invert(100%)
+
+  .leaflet-control-zoom
+    &:not(:hover)
+      opacity: 0.4
+    a
+      color: black
+
+  svg .leaflet-interactive
+    cursor: default
+    cursor: -webkit-grab
+

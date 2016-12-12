@@ -1,16 +1,13 @@
 import Component from 'ember-component'
-import computed from 'ember-computed-decorators'
-import get from 'ember-metal/get'
 
 
 
 export default Component.extend({
 
   // ----- Arguments -----
-  users:           undefined,
-  cityName:        undefined,
-  distanceLimitKm: undefined,
-
+  currentCity:       undefined,
+  userCityJunctions: undefined,
+  distanceLimitKm:   undefined,
 
 
 
@@ -19,7 +16,7 @@ export default Component.extend({
 
 
   // ----- Overridden properties -----
-  classNames: ['userList'],
+  classNames: ['heroHeader'],
 
 
 
@@ -28,10 +25,7 @@ export default Component.extend({
 
 
   // ----- Computed properties -----
-  @computed   ('users.@each.distanceKm', 'distanceLimitKm')
-  usersInRange (users,                    distanceLimitKm) {
-    return users.filter(user => get(user, 'distanceKm') <= distanceLimitKm)
-  },
+
 
 
   // ----- Overridden Methods -----

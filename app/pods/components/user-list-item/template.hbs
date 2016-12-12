@@ -1,19 +1,27 @@
-<div class = "userListItem-id">
-  {{user.user.id}}
+<div class = "userListItem-element _name">
+  <span class = "userListItem-element-value">{{user.name}}</span>
 </div>
 
-<div class = "userListItem-name">
-  {{user.name}}
+<div class = "userListItem-element _id">
+  <span class = "userListItem-element-label">ID: </span>
+  <span class = "userListItem-element-value">{{user.user.id}}</span>
 </div>
 
-<div class = "userListItem-latitude">
-  {{user.latitude}}
+<div class = "userListItem-element _latitude">
+  <span class = "userListItem-element-label">Latitude: </span>
+  <span class = "userListItem-element-value">{{user.latitude}}</span>
 </div>
 
-<div class = "userListItem-longitude">
-  {{user.longitude}}
+<div class = "userListItem-element _longitude">
+  <span class = "userListItem-element-label">Longitude: </span>
+  <span class = "userListItem-element-value">{{user.longitude}}</span>
 </div>
 
-<div class = "userListItem-distance">
-  {{round user.distanceKm 2}} km
+<div class = "userListItem-element _distance">
+  {{#if labels}}
+    <span class = "userListItem-element-value">{{user.distanceKm}}</span>
+  {{else}}
+    <span class = "userListItem-element-label">Distance: </span>
+    <span class = "userListItem-element-value">{{round user.distanceKm 2}} km</span>
+  {{/if}}
 </div>

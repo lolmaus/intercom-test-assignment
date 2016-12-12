@@ -54,14 +54,13 @@ describe('Acceptance | user list', function () {
       expect(user.distance.text, m).match(/\d+\.?\d?\d? km/)
 
       const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
-      const expectedClass = distance <= 100 ? '-inRange' : '-notInRange'
-      const oppositeClass = distance >  100 ? '-inRange' : '-notInRange'
-
-      m = `user ${i} should have class ${expectedClass}`
-      expect(user.hasClass(expectedClass), m).true
-
-      m = `user ${i} should not have class ${oppositeClass}`
-      expect(user.hasClass(oppositeClass), m).false
+      if (distance <= 100) {
+        m = `user ${i} should have class -inRange`
+        expect(user.hasClass('-inRange'), m).true
+      } else {
+        m = `user ${i} should not have class -inRange`
+        expect(user.hasClass('-inRange'), m).false
+      }
 
       if (!i) return
 
@@ -102,8 +101,8 @@ describe('Acceptance | user list', function () {
     m = `City select value initial`
     expect(IndexPage.citiesChooser.select.value, m).equal(city.id)
 
-    m = `City name initial`
-    expect(IndexPage.citiesChooser.name.text, m).equal(city.attributes.name)
+    // m = `City name initial`
+    // expect(IndexPage.citiesChooser.name.text, m).equal(city.attributes.name)
 
     m = `City latitude initial`
     expect(IndexPage.citiesChooser.latitude.text, m).equal(`${city.attributes.latitude}`)
@@ -118,8 +117,8 @@ describe('Acceptance | user list', function () {
     m = `City select should change id after selecting the second city`
     expect(IndexPage.citiesChooser.select.value, m).equal(newCity.id)
 
-    m = `City name should be updated after selecting the second city`
-    expect(IndexPage.citiesChooser.name.text, m).equal(newCity.attributes.name)
+    // m = `City name should be updated after selecting the second city`
+    // expect(IndexPage.citiesChooser.name.text, m).equal(newCity.attributes.name)
 
     m = `City latitude should be updated after selecting the second city`
     expect(IndexPage.citiesChooser.latitude.text, m).equal(`${newCity.attributes.latitude}`)
@@ -130,14 +129,14 @@ describe('Acceptance | user list', function () {
     _.times(usersFixtureCount, i => {
       const user          = IndexPage.userList.users(i)
       const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
-      const expectedClass = distance <= 100 ? '-inRange' : '-notInRange'
-      const oppositeClass = distance >  100 ? '-inRange' : '-notInRange'
 
-      m = `user ${i} should have class ${expectedClass} after switching city`
-      expect(user.hasClass(expectedClass), m).true
-
-      m = `user ${i} should not have class ${oppositeClass} after switching city`
-      expect(user.hasClass(oppositeClass), m).false
+      if (distance <= 100) {
+        m = `user ${i} should have class -inRange after switching city`
+        expect(user.hasClass('-inRange'), m).true
+      } else {
+        m = `user ${i} should not have class -inRange after switching city`
+        expect(user.hasClass('-inRange'), m).false
+      }
     })
 
     await IndexPage.distance.slider.fill(200)
@@ -145,14 +144,14 @@ describe('Acceptance | user list', function () {
     _.times(usersFixtureCount, i => {
       const user          = IndexPage.userList.users(i)
       const distance      = parseInt(user.distance.text.substr(/\d+\.?\d?\d?/), 10)
-      const expectedClass = distance <= 200 ? '-inRange' : '-notInRange'
-      const oppositeClass = distance >  200 ? '-inRange' : '-notInRange'
 
-      m = `user ${i} should have class ${expectedClass} after switching distance`
-      expect(user.hasClass(expectedClass), m).true
-
-      m = `user ${i} should not have class ${oppositeClass} after switching distance`
-      expect(user.hasClass(oppositeClass), m).false
+      if (distance <= 200) {
+        m = `user ${i} should have class -inRange after switching distance`
+        expect(user.hasClass('-inRange'), m).true
+      } else {
+        m = `user ${i} should not have class -inRange after switching distance`
+        expect(user.hasClass('-inRange'), m).false
+      }
     })
 
   })

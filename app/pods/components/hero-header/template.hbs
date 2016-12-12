@@ -1,0 +1,48 @@
+<h2 class = "heroHeader-title _left">
+  Test
+  <br class = "heroHeader-title-lineBreak">
+  assignment
+  <br class = "heroHeader-title-lineBreak">
+  for
+  <br class = "heroHeader-title-lineBreak">
+  Intercom
+</h2>
+
+<h2 class = "heroHeader-title _right">
+  built with ❤<br class = "heroHeader-title-lineBreak">
+  by Andrey<br class = "heroHeader-title-lineBreak">
+  Mikhaylov<br class = "heroHeader-title-lineBreak">
+  (<a href="http://lolma.us/en/">lolmaus</a>)
+</h2>
+
+{{#leaflet-map
+  class           = 'heroHeader-map'
+  lat             = 53.186288
+  lng             = -7.970581
+  zoom            = 6
+  scrollWheelZoom = false
+}}
+  {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
+
+  {{circle-layer
+    location  = (array currentCity.latitude currentCity.longitude)
+    radius    = (multiply distanceLimitKm 1000)
+    clickable = false
+  }}
+
+  {{#each userCityJunctions as |u|}}
+    {{#marker-layer
+      lat     = u.latitude
+      lng     = u.longitude
+      opacity = (if (lte u.distanceKm distanceLimitKm) 1 0.3)
+      alt     = (concat u.name ' (' (round u.distanceKm 1) ' km to ' currentCity.name ')')
+      title   = (concat u.name ' (' (round u.distanceKm 1) ' km to ' currentCity.name ')')
+    }}
+      {{#popup-layer popupOpen=(readonly u.isOpen)}}
+        <h3>{{u.name}}</h3>
+        <div>Distance to {{currentCity.name}}: {{round u.distanceKm 1}} km</div>
+        <div>Is in range: {{if (lte u.distanceKm distanceLimitKm) 'yes' 'no'}}</div>
+      {{/popup-layer}}
+    {{/marker-layer}}
+  {{/each}}
+{{/leaflet-map}}

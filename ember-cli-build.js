@@ -18,7 +18,13 @@ module.exports = function (defaults) {
         'images/marker-icon.png',
         'images/marker-shadow.png'
       ]
-    }
+    },
+
+    sassOptions: {
+      includePaths: [
+        'app/pods'
+      ]
+    },
   })
 
   // Use `app.import` to add additional libraries to the generated

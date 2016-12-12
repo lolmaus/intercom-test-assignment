@@ -1,0 +1,40 @@
+////------------------------------------------
+.route-city
+  //------------------------------------------
+
+  // ----- Content Layout -----
+  .route-city-main
+    max-width:    1200px
+    margin-left:  auto
+    margin-right: auto
+
+
+
+////------------------------------------------
+.route-city-main
+  //------------------------------------------
+
+  // ----- Layout -----
+  padding: 2rem
+
+  // ----- Content layout -----
+  .route-city-distance
+    margin-top: 0.5rem
+
+  .route-city-userList
+    margin-top: 2rem
+
+
+  // ----- RWD -----
+  +to(l)
+    .route-city-main-section
+      &:not(:last-child)
+        margin-bottom: 4rem
+
+  +from(xl)
+    display: flex
+
+    .route-city-main-section
+      width: 49%
+      &:first-child
+        margin-right: 2%

@@ -1,3 +1,20 @@
+<h2 class = "userList-title">
+  Lucky customers ({{usersInRange.length}} / {{users.length}}):
+  {{if (eq users.length usersInRange.length) "Rock'n'roll! 🍻"}}
+</h2>
+
+{{user-list-item
+  class  = "userList-tableHeader"
+  labels = true
+  user  = (hash
+    user       = (hash id = "ID")
+    name       = "Name"
+    latitude   = "Latitude"
+    longitude  = "Longitude"
+    distanceKm = "Distance"
+  )
+}}
+
 <div class = "userList-items">
   {{#each users as |user|}}
     {{user-list-item
@@ -6,4 +23,8 @@
       distanceLimitKm = distanceLimitKm
     }}
   {{/each}}
-</div>
+
+  <div class = "userList-item _empty {{if usersInRange.length '' '-inRange'}}">
+    No customers are this close to {{cityName}}. Don't drink alone!
+  </div>
+</div>{{! userList-items }}

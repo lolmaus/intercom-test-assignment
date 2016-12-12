@@ -1,4 +1,5 @@
 import Controller from 'ember-controller'
+import computed from 'ember-computed-decorators'
 
 
 
@@ -18,6 +19,13 @@ export default Controller.extend({
 
 
   // ----- Computed properties -----
+  @computed    ('model.userCityJunctions.@each.distanceKm')
+  maxDistanceLimitKm (userCityJunctions) {
+    return 1 +
+      userCityJunctions
+        .sortBy('distanceKm')
+        .get('lastObject.distanceKm')
+  },
 
 
 

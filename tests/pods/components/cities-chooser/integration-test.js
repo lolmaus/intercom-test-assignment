@@ -55,8 +55,8 @@ describe('Integration | Component | cities chooser', function () {
     m = `City select value initial`
     expect(citiesChooser.select.value, m).equal(cities[0].id)
 
-    m = `City name initial`
-    expect(citiesChooser.name.text, m).equal(cities[0].name)
+    // m = `City name initial`
+    // expect(citiesChooser.name.text, m).equal(cities[0].name)
 
     m = `City latitude initial`
     expect(citiesChooser.latitude.text, m).equal(`${cities[0].latitude}`)
@@ -75,8 +75,8 @@ describe('Integration | Component | cities chooser', function () {
     m = `City select value after selection`
     expect(citiesChooser.select.value, m).equal(cities[1].id)
 
-    m = `City name after selection`
-    expect(citiesChooser.name.text, m).equal(cities[1].name)
+    // m = `City name after selection`
+    // expect(citiesChooser.name.text, m).equal(cities[1].name)
 
     m = `City latitude after selection`
     expect(citiesChooser.latitude.text, m).equal(`${cities[1].latitude}`)
