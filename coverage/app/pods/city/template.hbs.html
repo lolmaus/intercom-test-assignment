@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/pods/city/template.hbs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/pods/city/</a> template.hbs
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/0</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default Ember.HTMLBars.template({"id":"+kvhcrVV","block":"{\"statements\":[[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"route-city\"],[\"flush-element\"],[\"text\",\"\\n\\n  \"],[\"append\",[\"helper\",[\"hero-header\"],null,[[\"currentCity\",\"userCityJunctions\",\"distanceLimitKm\"],[[\"get\",[\"model\",\"currentCity\"]],[\"get\",[\"model\",\"userCityJunctions\"]],[\"get\",[\"distanceLimitKm\"]]]]],false],[\"text\",\"\\n\\n\\n  \"],[\"open-element\",\"main\",[]],[\"static-attr\",\"class\",\"route-city-main\"],[\"flush-element\"],[\"text\",\"\\n\\n    \"],[\"open-element\",\"section\",[]],[\"static-attr\",\"class\",\"route-city-main-section _ui\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"append\",[\"helper\",[\"cities-chooser\"],null,[[\"class\",\"cities\",\"currentCity\",\"changeCityAction\"],[\"route-city-citiesChooser\",[\"get\",[\"model\",\"cities\"]],[\"get\",[\"model\",\"currentCity\"]],[\"helper\",[\"action\"],[[\"get\",[null]],\"changeCityAction\"],null]]]],false],[\"text\",\"\\n\\n\"],[\"block\",[\"with\"],[[\"helper\",[\"sort-by\"],[\"user.numericId\",[\"get\",[\"model\",\"userCityJunctions\"]]],null]],null,1],[\"text\",\"    \"],[\"close-element\"],[\"text\",\"\\n\\n\\n\\n    \"],[\"open-element\",\"section\",[]],[\"static-attr\",\"class\",\"route-city-main-section _desc\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"h2\",[]],[\"flush-element\"],[\"text\",\"The assignment\"],[\"close-element\"],[\"text\",\"\\n\\n      \"],[\"open-element\",\"input\",[]],[\"static-attr\",\"id\",\"route-city-assignmentToggler\"],[\"static-attr\",\"type\",\"checkbox\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"label\",[]],[\"static-attr\",\"for\",\"route-city-assignmentToggler\"],[\"flush-element\"],[\"text\",\"Expand\"],[\"close-element\"],[\"text\",\"\\n\\n      \"],[\"append\",[\"helper\",[\"markdown-to-html\"],[[\"helper\",[\"fr-markdown-file\"],[\"assignment\"],null]],[[\"class\"],[\"route-city-assignment\"]]],false],[\"text\",\"\\n\\n      \"],[\"append\",[\"helper\",[\"markdown-to-html\"],[[\"helper\",[\"fr-markdown-file\"],[\"description\"],null]],null],false],[\"text\",\"\\n    \"],[\"close-element\"],[\"text\",\"\\n\\n  \"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"close-element\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"            \"],[\"append\",[\"helper\",[\"input\"],null,[[\"class\",\"type\",\"min\",\"max\",\"value\"],[\"route-city-distance-slider\",\"range\",0,[\"get\",[\"maxDistanceLimitKm\"]],[\"get\",[\"distanceLimitKm\"]]]]],false],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"text\",\"        \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"route-city-distance\"],[\"flush-element\"],[\"text\",\"\\n          \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"route-city-distance-preLabel\"],[\"flush-element\"],[\"text\",\"\\n            Distance limit:\\n          \"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"block\",[\"unless\"],[[\"get\",[\"fastboot\",\"isFastBoot\"]]],null,0],[\"text\",\"\\n          \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"route-city-distance-label\"],[\"flush-element\"],[\"text\",\"\\n            \"],[\"append\",[\"unknown\",[\"distanceLimitKm\"]],false],[\"text\",\" km\\n          \"],[\"close-element\"],[\"text\",\"\\n        \"],[\"close-element\"],[\"text\",\"\\n\\n        \"],[\"append\",[\"helper\",[\"user-list\"],null,[[\"class\",\"users\",\"cityName\",\"distanceLimitKm\"],[\"route-city-userList\",[\"get\",[\"userCityJunctions\"]],[\"get\",[\"model\",\"currentCity\",\"name\"]],[\"get\",[\"distanceLimitKm\"]]]]],false],[\"text\",\"\\n\"]],\"locals\":[\"userCityJunctions\"]}],\"hasPartials\":false}","meta":{"moduleName":"intercom-test-assignment/pods/city/template.hbs"}});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Dec 13 2016 23:11:48 GMT+0300 (MSK)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

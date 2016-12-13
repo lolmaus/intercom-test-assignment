@@ -1,0 +1,9 @@
+{
+  "assets": {
+    "assets/intercom-test-assignment.css": "assets/intercom-test-assignment-421074ca2d69811388f3145434f88656.css",
+    "assets/intercom-test-assignment.js": "assets/intercom-test-assignment-0b90dfa0b5c6823f907110c2a72b5c24.js",
+    "assets/vendor.css": "assets/vendor-9da19f561939b36858644e2734ca02bc.css",
+    "assets/vendor.js": "assets/vendor-6ee7bdb898bf168c2decfab29d4cee6b.js"
+  },
+  "prepend": ""
+}

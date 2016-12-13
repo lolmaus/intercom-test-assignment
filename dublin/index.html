@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IntercomTestAssignment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="intercom-test-assignment/config/environment" content="%7B%22modulePrefix%22%3A%22intercom-test-assignment%22%2C%22podModulePrefix%22%3A%22intercom-test-assignment/pods%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22intercom-test-assignment%22%2C%22version%22%3A%220.0.0+b284239e%22%7D%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Atrue%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%22/%22%5D%7D%2C%22staticBoot%22%3A%7B%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<!-- EMBER_CLI_FASTBOOT_TITLE --><!-- EMBER_CLI_FASTBOOT_HEAD -->
+
+    <link rel="stylesheet" href="/assets/vendor-5584ec983779d70fa5d8b0676e931479.css" integrity="sha256-FdXbip85p9u3rlsHuVcv/lZxZj0nVbMvoHug3YXHv7A= sha512-mzBv2FiroB0Xj4PXIeTpy/oP5kUyt6mpa6n8xTMUy/fx13IAuChuiKWJ5JA95pKzngEwtY1XqnusNRRy5DlpUQ==" >
+    <link rel="stylesheet" href="/assets/intercom-test-assignment-421074ca2d69811388f3145434f88656.css" integrity="sha256-WcbqUvaHluIbQ/DHWkeVhZdWtYjEMSvo5jEOglwGNbk= sha512-kT1rOI2esYwd+Bx1jcsDtt8Gf6lJ6uf+IqC+Gx3QcSow50PVW92mn9iLkBUDRlv+DOmZ7/ah5exlMrH5wiw6Lg==" >
+
+    
+  </head>
+  <body>
+    <div id="ember1297" class="ember-view"><div class="route-city">
+
+  <div id="ember1314" class="heroHeader ember-view"><div class="heroHeader-content">
+  <h2 class="heroHeader-title _left">
+    Test
+    <br class="heroHeader-title-lineBreak">
+    assignment
+    <br class="heroHeader-title-lineBreak">
+    for
+    <br class="heroHeader-title-lineBreak">
+    Intercom
+  </h2>
+
+  <h2 class="heroHeader-title _right">
+    built with ❤<br class="heroHeader-title-lineBreak">
+    by Andrey<br class="heroHeader-title-lineBreak">
+    Mikhaylov<br class="heroHeader-title-lineBreak">
+    (<a href="http://lolma.us/en/">lolmaus</a>)
+  </h2>
+</div>
+
+<!----></div>
+
+
+  <main class="route-city-main">
+
+    <section class="route-city-main-section _ui">
+      <div id="ember1317" class="route-city-citiesChooser citiesChooser ember-view">  <strong>Dublin</strong>
+
+<span>
+
+  <span class="citiesChooser-latitude">53.3393</span>,
+  <span class="citiesChooser-longitude">-6.2576841</span>
+</span></div>
+
+        <div class="route-city-distance">
+          <span class="route-city-distance-preLabel">
+            Distance limit:
+          </span>
+
+<!---->
+          <span class="route-city-distance-label">
+            100 km
+          </span>
+        </div>
+
+        <div id="ember1324" class="route-city-userList userList ember-view"><h2 class="userList-title">
+  Lucky customers (16 / 32):
+  
+</h2>
+
+<div id="ember1329" class="userList-tableHeader userListItem -labels ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Name</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">ID</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">Latitude</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">Longitude</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-value">Distance</span>
+</div></div>
+
+<div class="userList-items">
+    <div id="ember1331" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Alice Cahill</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">1</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">51.92893</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-10.27699</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">313.25 km</span>
+</div></div>
+    <div id="ember1333" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Ian McArdle</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">2</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">51.8856167</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-10.4240951</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">324.37 km</span>
+</div></div>
+    <div id="ember1335" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Jack Enright</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">3</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.3191841</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.5072391</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">188.95 km</span>
+</div></div>
+    <div id="ember1337" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Ian Kehoe</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">4</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.2451022</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.238335</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">10.55 km</span>
+</div></div>
+    <div id="ember1339" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Nora Dempsey</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">5</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.1302756</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.2397222</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">23.27 km</span>
+</div></div>
+    <div id="ember1341" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Theresa Enright</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">6</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.1229599</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.2705202</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">24.07 km</span>
+</div></div>
+    <div id="ember1343" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Frank Kehoe</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">7</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.4692815</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-9.436036</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">211.17 km</span>
+</div></div>
+    <div id="ember1345" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Eoin Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">8</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.0894797</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.18671</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">83.55 km</span>
+</div></div>
+    <div id="ember1347" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Jack Dempsey</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">9</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.2559432</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.1048927</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">133.25 km</span>
+</div></div>
+    <div id="ember1349" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Georgina Gallagher</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">10</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.240382</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.972413</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">131.3 km</span>
+</div></div>
+    <div id="ember1351" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Richard Finnegan</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">11</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.008769</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.1056711</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">38.12 km</span>
+</div></div>
+    <div id="ember1353" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Christina McArdle</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">12</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.986375</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.043701</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">41.76 km</span>
+</div></div>
+    <div id="ember1355" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Olive Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">13</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">62.22 km</span>
+</div></div>
+    <div id="ember1357" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Helen Cahill</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">14</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">51.999447</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-9.742744</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">278.2 km</span>
+</div></div>
+    <div id="ember1359" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Michael Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">15</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.966</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.463</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">43.71 km</span>
+</div></div>
+    <div id="ember1361" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Ian Larkin</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">16</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.366037</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.179118</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">168.39 km</span>
+</div></div>
+    <div id="ember1363" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Patricia Cahill</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">17</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.180238</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-5.920898</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">96.09 km</span>
+</div></div>
+    <div id="ember1365" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Bob Larkin</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">18</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.228056</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.915833</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">166.44 km</span>
+</div></div>
+    <div id="ember1367" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Enid Cahill</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">19</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">55.033</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.112</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">223.65 km</span>
+</div></div>
+    <div id="ember1369" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Enid Enright</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">20</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.521111</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-9.831111</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">237.58 km</span>
+</div></div>
+    <div id="ember1371" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">David Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">21</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">51.802</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-9.442</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">274.79 km</span>
+</div></div>
+    <div id="ember1373" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Charlie McArdle</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">22</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.374208</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.371639</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">180.16 km</span>
+</div></div>
+    <div id="ember1375" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Eoin Gallagher</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">23</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.080556</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.361944</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">82.71 km</span>
+</div></div>
+    <div id="ember1377" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Rose Enright</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">24</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.133333</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.433333</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">89.04 km</span>
+</div></div>
+    <div id="ember1379" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">David Behan</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">25</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">52.833502</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.522366</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">161.36 km</span>
+</div></div>
+    <div id="ember1381" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Stephen McArdle</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">26</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.038056</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.653889</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">98.87 km</span>
+</div></div>
+    <div id="ember1383" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Enid Gallagher</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">27</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">54.1225</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-8.143333</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">151.55 km</span>
+</div></div>
+    <div id="ember1385" class="userList-item userListItem ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Charlie Halligan</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">28</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.807778</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.714444</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">109.38 km</span>
+</div></div>
+    <div id="ember1387" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Oliver Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">29</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.74452</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.11167</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">72.21 km</span>
+</div></div>
+    <div id="ember1389" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Nick Enright</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">30</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.761389</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-7.2875</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">82.65 km</span>
+</div></div>
+    <div id="ember1391" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Alan Behan</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">31</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.1489345</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.8422408</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">44.28 km</span>
+</div></div>
+    <div id="ember1393" class="userList-item userListItem -inRange ember-view"><div class="userListItem-element _name">
+  <span class="userListItem-element-value">Lisa Ahearn</span>
+</div>
+
+<div class="userListItem-element _id">
+  <span class="userListItem-element-label">ID: </span>
+  <span class="userListItem-element-value">39</span>
+</div>
+
+<div class="userListItem-element _latitude">
+  <span class="userListItem-element-label">Latitude: </span>
+  <span class="userListItem-element-value">53.0033946</span>
+</div>
+
+<div class="userListItem-element _longitude">
+  <span class="userListItem-element-label">Longitude: </span>
+  <span class="userListItem-element-value">-6.3877505</span>
+</div>
+
+<div class="userListItem-element _distance">
+    <span class="userListItem-element-label">Distance: </span>
+    <span class="userListItem-element-value">38.34 km</span>
+</div></div>
+
+  <div class="userList-item _empty ">
+    No customers are this close to Dublin. Don't drink alone!
+  </div>
+</div></div>
+    </section>
+
+
+
+    <section class="route-city-main-section _desc">
+      <h2>The assignment</h2>
+
+      <input id="route-city-assignmentToggler" type="checkbox">
+      <label for="route-city-assignmentToggler">Expand</label>
+
+      <div id="ember1396" class="route-city-assignment ember-view"><p>We have some customer records in a text file (customers.json) — one customer per line, JSON-encoded. We want to invite any customer within 100km of our Dublin office for some food and drinks on us. Write a program that will read the full list of customers and output the names and user ids of matching customers (within 100km), sorted by User ID (ascending).</p>
+<ul>
+<li>You can use the first formula from <a href="https://en.wikipedia.org/wiki/Great-circle_distance">this Wikipedia article</a> to calculate distance. Don't forget, you'll need to convert degrees to radians.</li>
+<li>The GPS coordinates for our Dublin office are 53.3393,-6.2576841.</li>
+<li>You can find the Customer list <a href="https://gist.github.com/brianw/19896c50afa89ad4dec3">here</a>.</li>
+<li>Please don’t forget, your code should be production ready, clean and tested!</li>
+</ul></div>
+
+      <div id="ember1397" class="ember-view"><h2 id="covernote">Cover note</h2>
+<p>Hey Intercom team! <a href="http://lolma.us/en/">Andrey</a> here.</p>
+<p>Thank you so much for the "production ready, clean and tested" part of the assignment. It lets me demonstrate my skills and actually stand out! Oh, and it's been a real pleasure to build. Please read on to know why!</p>
+<h4 id="codestyle">Code style</h4>
+<p>In case you look into the code and get surprised, I use a relaxed version of the <a href="http://standardjs.com/">StandardJS</a> code style, ensured by ESLint. Say goodbye to the husk of semicolons, say hello to the spread operator that JSHint chokes on.</p>
+<p>I use the pods structure for routes, controllers, components, their templates and styles, and also for their tests and page objects. Other classes such as Ember Data ones are outside of pods.</p>
+<h4 id="thedatalayer">The data layer</h4>
+<p>I decided to kick it up a notch: let you switch between several cities and see which customers are close enough to the selected city. The distance limit is also adjustable.</p>
+<p>This setup raises a question: where to keep the computed property that calculates the distances? Here are some options that I rejected:</p>
+<ul>
+<li>On the <code>user</code> model. In this case, the model must be aware of the UI state. It can be achieved with a service, but that increases coupling.</li>
+<li>On a service. A feasible option, but I don't like all-knowing services, preferring small fine-grained entities.</li>
+<li>On the controller. This is a great option, but the computed property can't be reused in several places. There's <code>this.controllerFor()</code>, but it won't work if that controller hasn't yet been visited.</li>
+<li>On a component. It has all the disadvantages of the controller option, but adds another one: when the user leaves the page, the component gets destroyed, and the computed property is no longer cached.</li>
+</ul>
+<p>Instead of all of the above, I created a <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/app/models/user-city-junction.js">user-city junction model</a>. It represents a unique combination of a user and a city. This is a clientside-only model, populated via <code>store.push</code> <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/app/pods/city/route.js#L45-L48">from the model hook</a>.</p>
+<p><code>store.push</code> can be safely called more than once: when the user revisits the route, it's called again, but it doesn't cause duplicates to appear.</p>
+<p>With the junction model, every <code>user-city-junction</code> record is created exactly when it's first needed. The distance is calculated in its computed property and cached on the record, so that the app doesn't need to calculate it again.</p>
+<p>This approach might seem an overkill for this simple use case, but I was excited to try it, and it proved to be very clean, consise and efficient.</p>
+<h4 id="thenetworklayer">The network layer</h4>
+<p>Customers and cities aren't hardcoded but rather fetched from <a href="https://gist.github.com">gist.github.com</a> via the <a href="https://rawgit.com">rawgit.com</a> CDN. The CDN step is necessary to work around GitHub's strict CORS policy.</p>
+<p>The <code>customers.json</code> file <a href="https://gist.github.com/brianw/19896c50afa89ad4dec3">provided</a> with the assignment isn't a valid JSON document, so I had to implement <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/app/serializers/user.js">a custom serializer</a> to parse it.</p>
+<p>I used <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/app/adapters/user.js">the simplest possible adapter implementation</a>: you pass an URL into the <code>query</code> method, the adapter fetches the content from that URL and passes it on to the serializer. Keep it simple, soldier!</p>
+<h4 id="fastboot">FastBoot! 😎</h4>
+<p>This app is a backendless FastBoot instance. "Backendless FastBoot" sounds contradictory, but it's quite reasonable when you think about it:</p>
+<ol>
+<li><code>ember build</code> runs FastBoot and generates static HTML.</li>
+<li>The HTML can be uploaded to a static hosting such as the free GitHub pages.</li>
+<li>When the user opens the app, they immediately see it prerendered. All links behave like web 1.0 links.</li>
+<li>When the JS bundle loads, Ember starts and "hydrates" the HTML, turning the page into a single page application.</li>
+</ol>
+<p>The above is possible thanks to this amazing addon: <a href="https://github.com/robwebdev/ember-cli-staticboot">robwebdev/ember-cli-staticboot</a>.</p>
+<p>The best part is that <code>ember-cli-staticboot</code> fills in for URL rewriting which GitHub Pages doesn't support. We no longer need to switch <code>location</code> mode to <code>hash</code> when using GitHub Pages.</p>
+<p><strong>Make sure to try this page with JS disabled!</strong></p>
+<h4 id="testing">Testing</h4>
+<p>For quite a while, I've been claiming to be capable of BDD. But the truth is that in all my commercial projects I had to cut corners for various reasons, such as:</p>
+<ul>
+<li>The business pressure was too tough.</li>
+<li>The management didn't see a benefit in spending time on tests.</li>
+<li>The app evolution was so rapid and erratic that rewriting tests to keep them up to date would've eaten ~90% of time.</li>
+</ul>
+<p>With this assignment, I finally leveraged the BDD workflow from start to finish. And I must say, it's been a great pleasure! The level of confidence BDD provides is unprecedented. Not only coding becomes stress-free, but also refactoring is no longer risky, so there's no reason to avoid it!</p>
+<p><img
+  src   = "http://i.imgur.com/85gEnMT.png"
+  alt   = "The BDD cycle"
+  title = "The BDD cycle"
+  style = "max-width: 300px"
+></p>
+<p>Here's a list of technologies and approaches that I've used:</p>
+<ul>
+<li>The <a href="http://chaijs.com/">Chai</a> assertion library with its <code>expect</code> DSL.</li>
+<li>Mocha test suite. When I started working with Ember, <a href="https://github.com/ember-cli/ember-cli-chai">ember-cli-chai</a> wasn't available, and QUnit's assertion library was very scanty. My first attempt to resolve this was my <a href="https://github.com/lolmaus/ember-cli-custom-assertions-collection">ember-cli-custom-assertions-collection</a>, but then I made a decision to switch to Mocha. I had to implement a <a href="https://github.com/mmelvin0/ember-cli-mocha-reporter/pull/2">custom test runner</a> to obtain the "no try/catch" feature.</li>
+<li><a href="http://www.ember-cli-mirage.com/">Mirage</a>. I didn't bother implementing a proper factory/model layer with Mirage and used simple <a href="https://github.com/lolmaus/intercom-test-assignment/tree/master/mirage/fixtures">fixtures</a> instead. But rest assured, I have good experience with Mirage. For example, it's me who <a href="https://github.com/samselikoff/ember-cli-mirage/pull/424">implemented</a> the support for JSONAPI <code>included</code> feature in Mirage.</li>
+<li>The page object pattern via <a href="http://ember-cli-page-object.js.org/">ember-cli-page-object</a> makes tests so much more readable! I also use my <a href="https://medium.com/@lolmaus/custom-component-helper-for-ember-cli-page-object-b6cead3ed32a">technique</a> to make page objects more concise and at the same time more powerful.</li>
+<li>The async/await syntax is another thing that substantially improves test readability, which I care a lot about. It's a known wisdom that reading code is more difficult than writing it, but reading tests is even more difficult. An unreadable test is a dead test.</li>
+<li>Finally, I use my own code style for tests where I pull the assertion message above the assertion expression.</li>
+</ul>
+<p>Here are links to some tests for you to check out:</p>
+<ul>
+<li>Acceptance test: <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/pods/city/acceptance-test.js">city route</a> and the corresponding <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/pods/city/page-object.js">page object</a>.</li>
+<li>Integration test of a component with an action: <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/pods/components/cities-chooser/integration-test.js">cities-chooser component</a>, <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/pods/components/cities-chooser/page-object.js">page object</a>.</li>
+<li>Different styles of unit tests:</li>
+<li>Model hook of the <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/pods/city/route-test.js">city route</a>.</li>
+<li>Helper: <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/unit/helpers/round-test.js">round</a></li>
+<li>A computed property on the <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/tests/unit/models/user-city-junction-test.js">user-city-junction model</a>.</li>
+</ul>
+<p>Please <a href="http://lolmaus.github.io/intercom-test-assignment/tests">try running tests online</a> and <a href="http://lolmaus.github.io/intercom-test-assignment/coverage">view the coverage report</a>!</p>
+<p>I ran short on time and didn't test some extra features that weren't part of the assignment, e. g. the map. </p>
+<p>BTW, <a href="http://www.ember-leaflet.com/">ember-leaflet</a> is an awesome addon, but it doesn't provide any testing abstractions. :( I'm not even sure how interactive maps are supposed to be tested. 😕 I can only think of a very low-level approach with a lot of boilerplate code. Implementing a clean set of high-level testing abstractions would be an amazing open source contribution.</p>
+<h4 id="stylingcodebase">Styling codebase</h4>
+<p>I use my own methodology to organize the Sass codebase, so that it is infinitely scalable and prevents leaks. It's a simplified version of BEM with some radical, yet well-thought restrictions.</p>
+<p>I gave a talk on it <a href="https://www.youtube.com/watch?v=_bpSL71qknY">in Russian</a> on the MoscowJS meetup.</p>
+<p>Please check out my Sass code style: <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/app/pods/city/style.sass">app/pods/city/style.sass</a>.</p>
+<h4 id="responsivewebdesign">Responsive Web Design</h4>
+<p>This page is responsive and realigns nicely on any viewport size. Try it out!</p>
+<p>For RWD in Ember, I typically use my <a href="https://github.com/lolmaus/ember-element-query">ember-element-query</a> addon. It lets you define responsive CSS rules based on element width, not page width. This lets you implement reusable responsive components, with their responsiveness being agnostic to where you put it in your page layout. Also, RWD styles become so much more concise!</p>
+<p>Unfortunately, the element query technique requires JS. It could be worked around in FastBoot if browsers reported viewport width in their HTTP requests, but they don't.</p>
+<p>So I had to fallback to media queries which I implement using my know-how: the magnificent <a href="https://github.com/lolmaus/breakpoint-slicer">breakpoint-slicer</a>. By the way, has whopping 283 stars on GitHub! &lt;/irony></p>
+<h4 id="whatelsecouldhavebeendone">What else could have been done</h4>
+<p>I had to draw the line somewhere, leaving some features behind. I wish I had more time to implement these:</p>
+<ul>
+<li>Sorting the customers table by clicking table headers.</li>
+<li>Using the FastBoot Shoebox to pass data from the build into Ember Data, so that it doesn't have to redownload the data. I have implemented this for <a href="http://lolma.us/en/">my personal website</a> with a <a href="https://github.com/lolmaus/lolma.us/blob/master/app/instance-initializers/fastboot/ember-data-fastboot.js">custom</a> <a href="https://github.com/lolmaus/lolma.us/blob/master/app/instance-initializers/browser/ember-data-fastboot.js">implementation</a> of the <a href="https://github.com/ember-fastboot/ember-cli-fastboot">ember-data-fastboot</a> approach.</li>
+<li>Due to FastBoot, I had to use a JS-free implementation of the "expand the assignment" checkbox. When Ember boots, it rerenders the HTML, and the checkbox state resets. I didn't resolve this issue here, but on my <a href="http://lolma.us/en/">personal website</a>, I capture the state of all scrollbars and CSS-driven checkboxes and reapply it after the initial rerender. Hopefully, FastBoot eventually becomes capable of reusing the prerendered HTML and this trick becomes unnecessary.</li>
+<li>Authentication. It would be nice to let you edit cities and customers. It's definitely too much for a test assignment, but on my website I've implemented authentication so that you can star my Ember addons via the GitHub API. Should I implement batch starring as well? :)</li>
+<li>Accessibility and i18n are two features that are a must for any commercial project.</li>
+</ul>
+<h4 id="toolsused">Tools used</h4>
+<p>For the technologies used in the codebase, see <a href="https://github.com/lolmaus/intercom-test-assignment/blob/master/package.json">package.json</a>.</p>
+<p>Here are noteworthy non-codebase tools:</p>
+<ul>
+<li><a href="https://nodejs.org/en/">Node 7.2.1</a></li>
+<li><a href="https://yarnpkg.com/">Yarn</a> package manager</li>
+<li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> by JetBrains</li>
+<li><a href="https://linuxmint.com/">Linux Mint</a></li>
+<li><a href="http://www.ikea.com/ie/en/products/sofas-armchairs/armchairs/po%C3%A4ng-armchair-birch-veneer-gr%C3%A4sbo-dark-blue-spr-59150002/">POÄNG</a> by IKEA</li>
+</ul>
+<h4 id="dropmealine">Drop me a line!</h4>
+<p><a href="mailto:lolmaus@gmail.com">lolmaus@gmail.com</a></p></div>
+    </section>
+
+  </main>
+
+  <a href="https://github.com/lolmaus/intercom-test-assignment" class="route-city-fork">
+    <img src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+  </a>
+
+</div></div>
+
+    <script src="/assets/vendor-534ba3674c66d895e621d0205e1af56b.js" integrity="sha256-KQC/2OBJLHDp4xbIZsmaueIc4P+GU1P8v0CVYQ8vvjY= sha512-FB/9YKoo17FLACMY5gauTG5hEX0Qgwt5Q3mfYmw9HiPlbUmYXhktEIwknYU3RnibAIMTC4tgckyWet22+WPPeg==" ></script>
+    <script src="/assets/intercom-test-assignment-cb36f0cf2806f7b51f766b2cc3636b01.js" integrity="sha256-YbVQemdBZMwPCPKe/43HNYyq1olAjyK+a0v07iYiIy8= sha512-NuFSizwev+sF5jLp0tvYDp/HYA2C0t4Nk52BOiE4c/vyOcoNkNxN7i/V7pJdOuuWGszuJfMpj3jazGVpROg/dw==" ></script>
+
+    
+  </body>
+</html>

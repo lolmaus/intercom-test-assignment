@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/pods/components/hero-header/template.hbs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">app/pods/components/hero-header/</a> template.hbs
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/0</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default Ember.HTMLBars.template({"id":"JjGWXJyY","block":"{\"statements\":[[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"heroHeader-content\"],[\"flush-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"h2\",[]],[\"static-attr\",\"class\",\"heroHeader-title _left\"],[\"flush-element\"],[\"text\",\"\\n    Test\\n    \"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    assignment\\n    \"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    for\\n    \"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    Intercom\\n  \"],[\"close-element\"],[\"text\",\"\\n\\n  \"],[\"open-element\",\"h2\",[]],[\"static-attr\",\"class\",\"heroHeader-title _right\"],[\"flush-element\"],[\"text\",\"\\n    built with ❤\"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    by Andrey\"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    Mikhaylov\"],[\"open-element\",\"br\",[]],[\"static-attr\",\"class\",\"heroHeader-title-lineBreak\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n    (\"],[\"open-element\",\"a\",[]],[\"static-attr\",\"href\",\"http://lolma.us/en/\"],[\"flush-element\"],[\"text\",\"lolmaus\"],[\"close-element\"],[\"text\",\")\\n  \"],[\"close-element\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"block\",[\"unless\"],[[\"get\",[\"fastboot\",\"isFastBoot\"]]],null,4]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"          \"],[\"open-element\",\"h3\",[]],[\"flush-element\"],[\"append\",[\"unknown\",[\"u\",\"name\"]],false],[\"close-element\"],[\"text\",\"\\n          \"],[\"open-element\",\"div\",[]],[\"flush-element\"],[\"text\",\"Distance to \"],[\"append\",[\"unknown\",[\"currentCity\",\"name\"]],false],[\"text\",\": \"],[\"append\",[\"helper\",[\"round\"],[[\"get\",[\"u\",\"distanceKm\"]],1],null],false],[\"text\",\" km\"],[\"close-element\"],[\"text\",\"\\n          \"],[\"open-element\",\"div\",[]],[\"flush-element\"],[\"text\",\"Is in range: \"],[\"append\",[\"helper\",[\"if\"],[[\"helper\",[\"lte\"],[[\"get\",[\"u\",\"distanceKm\"]],[\"get\",[\"distanceLimitKm\"]]],null],\"yes\",\"no\"],null],false],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]},{\"statements\":[[\"block\",[\"popup-layer\"],null,[[\"popupOpen\"],[[\"helper\",[\"readonly\"],[[\"get\",[\"u\",\"isOpen\"]]],null]]],0]],\"locals\":[]},{\"statements\":[[\"block\",[\"marker-layer\"],null,[[\"lat\",\"lng\",\"opacity\",\"alt\",\"title\"],[[\"get\",[\"u\",\"latitude\"]],[\"get\",[\"u\",\"longitude\"]],[\"helper\",[\"if\"],[[\"helper\",[\"lte\"],[[\"get\",[\"u\",\"distanceKm\"]],[\"get\",[\"distanceLimitKm\"]]],null],1,0.3],null],[\"helper\",[\"concat\"],[[\"get\",[\"u\",\"name\"]],\" (\",[\"helper\",[\"round\"],[[\"get\",[\"u\",\"distanceKm\"]],1],null],\" km to \",[\"get\",[\"currentCity\",\"name\"]],\")\"],null],[\"helper\",[\"concat\"],[[\"get\",[\"u\",\"name\"]],\" (\",[\"helper\",[\"round\"],[[\"get\",[\"u\",\"distanceKm\"]],1],null],\" km to \",[\"get\",[\"currentCity\",\"name\"]],\")\"],null]]],1]],\"locals\":[\"u\"]},{\"statements\":[[\"text\",\"    \"],[\"append\",[\"helper\",[\"tile-layer\"],null,[[\"url\"],[\"http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png\"]]],false],[\"text\",\"\\n\\n    \"],[\"append\",[\"helper\",[\"circle-layer\"],null,[[\"location\",\"radius\",\"clickable\"],[[\"helper\",[\"array\"],[[\"get\",[\"currentCity\",\"latitude\"]],[\"get\",[\"currentCity\",\"longitude\"]]],null],[\"helper\",[\"multiply\"],[[\"get\",[\"distanceLimitKm\"]],1000],null],false]]],false],[\"text\",\"\\n\\n\"],[\"block\",[\"each\"],[[\"get\",[\"userCityJunctions\"]]],null,2]],\"locals\":[]},{\"statements\":[[\"block\",[\"leaflet-map\"],null,[[\"class\",\"lat\",\"lng\",\"zoom\",\"scrollWheelZoom\"],[\"heroHeader-map\",53.186288,-7.970581,6,false]],3]],\"locals\":[]}],\"hasPartials\":false}","meta":{"moduleName":"intercom-test-assignment/pods/components/hero-header/template.hbs"}});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Dec 13 2016 23:11:48 GMT+0300 (MSK)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
