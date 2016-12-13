@@ -1,11 +1,13 @@
 import Controller from 'ember-controller'
 import computed from 'ember-computed-decorators'
+import service from 'ember-service/inject'
 
 
 
 export default Controller.extend({
 
   // ----- Services -----
+  fastboot: service(),
 
 
 

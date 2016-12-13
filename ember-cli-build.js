@@ -25,6 +25,16 @@ module.exports = function (defaults) {
         'app/pods'
       ]
     },
+
+    'ember-cli-staticboot': {
+      paths: [
+        '/',
+        '/athlone',
+        '/castlebar',
+        '/cork',
+        '/dublin'
+      ],
+    },
   })
 
   // Use `app.import` to add additional libraries to the generated

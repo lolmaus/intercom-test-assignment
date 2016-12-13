@@ -25,7 +25,13 @@ module.exports = function (environment) {
 
     'ember-cli-mirage': {
       enabled: environment === 'test'
-    }
+    },
+
+    fastboot: {
+      hostWhitelist: [
+        '/'
+      ],
+    },
   }
 
   if (environment === 'development') {

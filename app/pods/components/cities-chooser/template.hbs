@@ -1,20 +1,24 @@
-<span class = "citiesChooser-label">
-  Select city:
-</span>
+{{#if fastboot.isFastBoot}}
+  <strong>{{currentCity.name}}</strong>
+{{else}}
+  <span class = "citiesChooser-label">
+    Select city:
+  </span>
 
-<select
-  class    = "citiesChooser-select"
-  onchange = {{action changeCityAction value="target.value"}}
->
-  {{#each cities as |city|}}
-    <option
-      value    = {{city.id}}
-      selected = {{eq city currentCity}}
-    >
-      {{city.name}}
-    </option>
-  {{/each}}
-</select>
+  <select
+    class    = "citiesChooser-select"
+    onchange = {{action changeCityAction value="target.value"}}
+  >
+    {{#each cities as |city|}}
+      <option
+        value    = {{city.id}}
+        selected = {{eq city currentCity}}
+      >
+        {{city.name}}
+      </option>
+    {{/each}}
+  </select>
+{{/if}}
 
 <span>
   <span class = "citiesChooser-name">      {{!currentCity.name}}     </span>

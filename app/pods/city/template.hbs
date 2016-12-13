@@ -23,13 +23,15 @@
             Distance limit:
           </span>
 
-          {{input
-            class = "route-city-distance-slider"
-            type  = "range"
-            min   = 0
-            max   = maxDistanceLimitKm
-            value = distanceLimitKm
-          }}
+          {{#unless fastboot.isFastBoot}}
+            {{input
+              class = "route-city-distance-slider"
+              type  = "range"
+              min   = 0
+              max   = maxDistanceLimitKm
+              value = distanceLimitKm
+            }}
+          {{/unless}}
 
           <span class = "route-city-distance-label">
             {{distanceLimitKm}} km
