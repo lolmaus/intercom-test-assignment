@@ -30,12 +30,17 @@
 
     // ----- RWD -----
     +to(s)
+      $vertical-margin: 1rem
+
+      .userList-items
+        margin-bottom: -$vertical-margin
+
       .userList-tableHeader
         display: none
 
       .userList-item
-        &:not(:last-child)
-          margin-bottom: 1rem
+        &.-inRange
+          margin-bottom: $vertical-margin
 
     +from(m)
       .userList-item, .userList-tableHeader
