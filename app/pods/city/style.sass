@@ -1,3 +1,8 @@
+@import app/styles/helpers/copy
+
+
+
+
 ////------------------------------------------
 .route-city
   //------------------------------------------
@@ -38,3 +43,42 @@
       width: 49%
       &:first-child
         margin-right: 2%
+
+
+
+////------------------------------------------
+.route-city-main-section._desc
+  //------------------------------------------
+
+  // ----- Text -----
+  +copy
+
+  // ----- Content layout -----
+  .route-city-assignment
+    margin-bottom: 2rem
+
+
+
+////------------------------------------------
+.route-city-assignment
+  //------------------------------------------
+
+  // ----- Behavior -----
+  max-height: 1000px
+  transition: max-height 0.3s
+  overflow:   hidden
+
+  #route-city-assignmentToggler:not(:checked) ~ &
+    max-height: 30px
+
+
+    > *:first-child
+      white-space:   nowrap
+      overflow:      hidden
+      text-overflow: ellipsis
+
+    > *:not(:first-child)
+      display: none
+
+
+

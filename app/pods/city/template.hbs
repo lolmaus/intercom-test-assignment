@@ -50,7 +50,19 @@
 
 
     <section class = "route-city-main-section _desc">
-      asdf
+      <h2>The assignment</h2>
+
+      <input id="route-city-assignmentToggler" type="checkbox">
+      <label for="route-city-assignmentToggler">Expand</label>
+
+      {{markdown-to-html
+        (fr-markdown-file 'assignment')
+        class = "route-city-assignment"
+      }}
+
+      {{markdown-to-html
+        (fr-markdown-file 'description')
+      }}
     </section>{{! route-city-main-section _desc }}
 
   </main>{{! route-city-main }}
