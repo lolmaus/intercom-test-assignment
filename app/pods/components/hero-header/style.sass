@@ -3,14 +3,10 @@
   //------------------------------------------
 
   // ----- Layout -----
-  position:   relative
-  min-height: 300px
+  position:     relative
 
   // ----- Looks -----
   background-color: #242426
-
-  &, a, h2
-    color: white
 
   // ----- Content layout -----
   .heroHeader-map
@@ -21,6 +17,26 @@
     height:   100%
     z-index:  1
 
+
+
+///------------------------------------------
+.heroHeader-content
+  //------------------------------------------
+
+  // ----- Layout -----
+  position:     relative
+  min-height:   300px
+  max-width:    $ita-max-width
+  margin-left:  auto
+  margin-right: auto
+
+  // ----- Looks -----
+  background-color: #242426
+
+  &, a, h2
+    color: white
+
+  // ----- Content layout -----
   .heroHeader-title
     position: relative
     z-index:  2
@@ -71,7 +87,10 @@
 .heroHeader-map
   //------------------------------------------
 
-  // ----- Content Looks -----
+  // ----- Looks -----
+  background-color: #242426
+
+  // ----- Content -----
   .leaflet-control-zoom
     &:not(:hover)
       opacity: 0.4
